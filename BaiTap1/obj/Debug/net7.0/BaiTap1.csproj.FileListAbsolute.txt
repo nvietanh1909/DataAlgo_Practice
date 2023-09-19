@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\bin\Debug\net7.0\BaiTap1.exe
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\bin\Debug\net7.0\BaiTap1.deps.json
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\bin\Debug\net7.0\BaiTap1.runtimeconfig.json
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\bin\Debug\net7.0\BaiTap1.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\bin\Debug\net7.0\BaiTap1.pdb
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\refint\BaiTap1.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.pdb
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\BaiTap1.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap1\obj\Debug\net7.0\ref\BaiTap1.dll
