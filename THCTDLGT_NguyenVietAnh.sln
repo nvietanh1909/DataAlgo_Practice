@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap1", "BaiTap1\BaiTap1.csproj", "{BA5A572E-DCD1-4F28-962F-AA1F9B7CC14F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap2", "BaiTap2\BaiTap2.csproj", "{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap2", "BaiTap2\BaiTap2.csproj", "{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap3", "BaiTap3\BaiTap3.csproj", "{47D2412A-302B-47EE-B047-64E49ECD2618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D2412A-302B-47EE-B047-64E49ECD2618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D2412A-302B-47EE-B047-64E49ECD2618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D2412A-302B-47EE-B047-64E49ECD2618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D2412A-302B-47EE-B047-64E49ECD2618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
