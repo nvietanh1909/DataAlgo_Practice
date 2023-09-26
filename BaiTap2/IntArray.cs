@@ -130,18 +130,19 @@ namespace BaiTap2
             a = b;
             b = tam;
         }
-        public void InterchageSort()
+        public void InterchangeSort()
         {
             for (var i = 0; i < arr.Length - 1; i++)
-            {
                 for (var j = i + 1; j < arr.Length; j++)
-                {
                     if (arr[i] > arr[j])
-                    {
                         HoanVi(ref arr[i], ref arr[j]);
-                    }
-                }
-            }
+        }
+        public void BubbleSort()
+        {
+            for (var i = 0; i < arr.Length - 1; i++)
+                for (var j = arr.Length - 1; j > i; j--)
+                    if (arr[j] < arr[j - 1])
+                        HoanVi(ref arr[j], ref arr[j - 1]);
         }
         public void SelectionSort()
         {
@@ -149,25 +150,92 @@ namespace BaiTap2
             {
                 var min = i;
                 for (var j = i + 1; j < arr.Length; j++)
-                {
                     if (arr[min] > arr[j])
-                    {
                         min = j;
-                    }
-                }
                 if (min == i)
-                {
                     continue;
-                }
                 else
-                {
                     HoanVi(ref arr[i], ref arr[min]);
+
+            }
+        }
+        public void InsertionSort()
+        {
+            for(var i = 1; i < arr.Length; i++)
+            {
+                var x = arr[i];
+                var pos = i - 1;
+                while (pos >= 0 && arr[pos] > x)
+                {
+                    arr[pos + 1] = arr[pos];
+                    pos = pos - 1;
                 }
+                arr[pos + 1] = x;
             }
         }
         public void QuickSort(int left, int right)
         {
-
+            var x = arr[(left + right) / 2];
+            var i = left;
+            var j = right;
+            while (arr[i] < x)
+                i++;
+            while (arr[j] > x)
+                j--;
+            if (i <= j)
+            {
+                HoanVi(ref arr[i], ref arr[j]);
+                i++;
+                j--;
+            }
+            if (left < j)
+                QuickSort(left, j);
+            if (i < right)
+                QuickSort(i, right);
+        }
+        public void ShellSort()
+        {
+            for(var pivot = arr.Length / 2; 0 < pivot ; pivot /= 2)
+            {
+                for(var i = pivot; i < arr.Length; i++)
+                {
+                    var x = arr[i];
+                    var pos = i - 1;
+                    while (pos >= 0 && arr[pos] > x)
+                    {
+                        arr[pos + 1] = arr[pos];
+                        pos = pos - 1;
+                    }
+                    arr[pos + 1] = x;
+                }
+            }
+        }
+        public void SnakerSort()
+        {
+            var left = 0;
+            var right = arr.Length - 1;
+            var pivot = 0;
+            while(left < right)
+            {
+                for(var i = left; i < right; i++)
+                {
+                    if (arr[i] > arr[i + 1])
+                    {
+                        HoanVi(ref arr[i], ref arr[i + 1]);
+                        pivot = i;
+                    }
+                }
+                right = pivot;
+                for (var j = pivot; j > 0; j--)
+                {
+                    if (arr[j] < arr[j - 1])
+                    {
+                        HoanVi(ref arr[j], ref arr[j - 1]);
+                        pivot = j;
+                    }
+                }
+                left = pivot;
+            }
         }
     }
 }

@@ -2,57 +2,87 @@
 namespace BaiTap2;
 class Program
 {
-    static void TestTimTuanTu()
+    static void TestBubbleSort(IntArray obj)
     {
-        Console.OutputEncoding = System.Text.Encoding.Unicode;
-        int k, x, kq;
-        try
-        {
-            Console.Write("Nhập kích thước mảng: ");
-            k = int.Parse(Console.ReadLine());
-            IntArray obj = new IntArray(k);
-            Console.WriteLine("Các phần tử của mảng:");
-            obj.Xuat();
-            Console.Write("\nGiá trị x cần tim = ");
-            int.TryParse(Console.ReadLine(), out x);
-            kq = obj.TimTuanTu(x);
-            if (kq == -1)
-                Console.WriteLine($"Không tìm thấy {x}!");
-            else
-                Console.WriteLine($"Có {x} tại vị trí {kq}");
-        } catch(Exception e)
-        {
-            Console.WriteLine("Lỗi: {0}", e.Message);
-        }
+        //Copy ojb sang objTam để sắp xếp
+        IntArray objTam = new IntArray(obj);
+        Console.WriteLine("\n>>Mang ban dau:");
+        objTam.Xuat();
+        objTam.BubbleSort();
+        Console.WriteLine("\n>>Bubble Sort:");
+        objTam.Xuat();
     }
-    public static void TestTimNhiPhan()
+    static void TestInterchangeSort(IntArray obj)
     {
-        try
-        {
-            IntArray obj = new IntArray();
-            obj.PhatSinhTang();
-            obj.Xuat();
-            Console.Write("\nGiá trị x cần tìm = ");
-            int x = int.Parse(Console.ReadLine());
-            int kq = obj.TimNhiPhan(x);
-            if (kq == -1)
-                Console.WriteLine($"Không tồn tại {x} trong mảng!");
-            else
-                Console.WriteLine($"Có {x} tại vị trí {kq}");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine("Lỗi: {0}", e.Message);
-        }
-
+        //Copy ojb sang objTam để sắp xếp
+        IntArray objTam = new IntArray(obj);
+        Console.WriteLine("\n>>Mang ban dau:");
+        objTam.Xuat();
+        objTam.InterchangeSort();
+        Console.WriteLine("\n>>Interchange Sort:");
+        objTam.Xuat();
     }
+    static void TestInsertionSort(IntArray obj)
+    {
+        //Copy ojb sang objTam để sắp xếp
+        IntArray objTam = new IntArray(obj);
+        Console.WriteLine("\n>>Mang ban dau:");
+        objTam.Xuat();
+        objTam.InsertionSort();
+        Console.WriteLine("\n>>Insertion Sort:");
+        objTam.Xuat();
+    }
+    static void TestQuickSort(IntArray obj)
+    {
+        //Copy ojb sang objTam để sắp xếp
+        IntArray objTam = new IntArray(obj);
+        Console.WriteLine("\n>>Mang ban dau:");
+        objTam.Xuat();
+        objTam.QuickSort(0, objTam.Size - 1);
+        Console.WriteLine("\n>>Quick Sort:");
+        objTam.Xuat();
+    }
+    static void TestShellSort(IntArray obj)
+    {
+        //Copy ojb sang objTam để sắp xếp
+        IntArray objTam = new IntArray(obj);
+        Console.WriteLine("\n>>Mang ban dau:");
+        objTam.Xuat();
+        objTam.ShellSort();
+        Console.WriteLine("\n>>Sell Sort:");
+        objTam.Xuat();
+    }
+    static void TestSnakeSort(IntArray obj)
+    {
+        //Copy ojb sang objTam để sắp xếp
+        IntArray objTam = new IntArray(obj);
+        Console.WriteLine("\n>>Mang ban dau:");
+        objTam.Xuat();
+        objTam.SnakerSort();
+        Console.WriteLine("\n>>Snake Sort:");
+        objTam.Xuat();
+    }
+    //Test những phương pháp sắp xếp khác
     static void Main(string[] args)
     {
-        Console.OutputEncoding = System.Text.Encoding.Unicode;
-        Console.WriteLine("Tìm kiếm nhị phân");
-        TestTimTuanTu();
-        Console.WriteLine("-------------------------------------------------");
-        Console.WriteLine("Tìm kiếm tuần tự");
-        TestTimNhiPhan();
+        IntArray obj = new IntArray(10);
+        TestBubbleSort(obj);
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------");
+        TestInterchangeSort(obj);
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------");
+        TestInsertionSort(obj);
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------");
+        TestQuickSort(obj);
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------");
+        TestShellSort(obj);
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------");
+        TestSnakeSort(obj);
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------");
     }
 }
