@@ -61,20 +61,21 @@ namespace DSLKDon
         }
         public IntNode SearchX(IntNode x)
         {
-            while(first != null)
+            IntNode node = first;
+            while (node != null)
             {
-                if (first == x) return first;
-                else first = first.Next;
+                if (node == x) return node;
+                else node = node.Next;
             }
-            return first;
+            return node;
         }
         public IntNode GetMax()
         {
             IntNode max = first;
             IntNode next = max.Next;
-            while(next != null)
+            while (next != null)
             {
-                if(max.Data < next.Data) max = next;
+                if (max.Data < next.Data) max = next;
                 next = next.Next;
             }
             return max;

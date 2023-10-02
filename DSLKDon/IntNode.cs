@@ -9,12 +9,13 @@ namespace DSLKDon
     internal class IntNode
     {
         //Field
-        private int data;
-        private IntNode next;
+        int data;
+        IntNode next;
+
         //Properties
-        public int Data { get => data ; set => data = value; }
+        public int Data { get => data; set => data = value; }
         public IntNode Next { get => next; set => next = value; }
-        //Constructor
+        //Constuctor
         public IntNode(int x = 0)
         {
             data = x;
