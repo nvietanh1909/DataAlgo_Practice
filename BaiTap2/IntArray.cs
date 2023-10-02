@@ -237,5 +237,10 @@ namespace BaiTap2
                 left = pivot;
             }
         }
+        public void MergeSort()
+        {
+            var i = 0;
+            var j = arr.Length - 1;
+        }
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\bin\Debug\net7.0\DSLKDon.exe
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\bin\Debug\net7.0\DSLKDon.deps.json
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\bin\Debug\net7.0\DSLKDon.runtimeconfig.json
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\bin\Debug\net7.0\DSLKDon.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\bin\Debug\net7.0\DSLKDon.pdb
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\refint\DSLKDon.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.pdb
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\DSLKDon.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\DSLKDon\obj\Debug\net7.0\ref\DSLKDon.dll

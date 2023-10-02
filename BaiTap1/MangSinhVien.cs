@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace BaiTap1
 {
     internal class MangSinhVien
@@ -42,6 +41,7 @@ namespace BaiTap1
             return false;
         }
         //Method
+        
         public void Nhap()
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
@@ -62,6 +62,20 @@ namespace BaiTap1
                 {
                     item.Xuat();
                 }
+            }
+        }
+        public void InsertionSort()
+        {
+            for (var i = 1; i < arr.Length; i++)
+            {
+                var x = arr[i];
+                var pos = i - 1;
+                while (pos >= 0 && arr[pos] > x)
+                {
+                    arr[pos + 1] = arr[pos];
+                    pos = pos - 1;
+                }
+                arr[pos + 1] = x;
             }
         }
     }

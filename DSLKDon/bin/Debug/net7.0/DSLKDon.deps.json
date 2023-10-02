@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "BaiTap3/1.0.0": {
+      "DSLKDon/1.0.0": {
         "runtime": {
-          "BaiTap3.dll": {}
+          "DSLKDon.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BaiTap3/1.0.0": {
+    "DSLKDon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

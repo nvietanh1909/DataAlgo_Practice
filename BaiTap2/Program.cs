@@ -66,22 +66,25 @@ class Program
     static void Main(string[] args)
     {
         IntArray obj = new IntArray(10);
-        TestBubbleSort(obj);
-        Console.WriteLine();
-        Console.WriteLine("-----------------------------");
-        TestInterchangeSort(obj);
-        Console.WriteLine();
-        Console.WriteLine("-----------------------------");
-        TestInsertionSort(obj);
-        Console.WriteLine();
-        Console.WriteLine("-----------------------------");
-        TestQuickSort(obj);
-        Console.WriteLine();
-        Console.WriteLine("-----------------------------");
-        TestShellSort(obj);
-        Console.WriteLine();
-        Console.WriteLine("-----------------------------");
-        TestSnakeSort(obj);
+        //TestBubbleSort(obj);
+        //Console.WriteLine();
+        //Console.WriteLine("-----------------------------");
+        //TestInterchangeSort(obj);
+        //Console.WriteLine();
+        //Console.WriteLine("-----------------------------");
+        //TestInsertionSort(obj);
+        //Console.WriteLine();
+        //Console.WriteLine("-----------------------------");
+        //TestQuickSort(obj);
+        //Console.WriteLine();
+        //Console.WriteLine("-----------------------------");
+        //TestShellSort(obj);
+        //Console.WriteLine();
+        //Console.WriteLine("-----------------------------");
+        //TestSnakeSort(obj);
+        //Console.WriteLine();
+        //Console.WriteLine("-----------------------------");
+        TestMergeSort(obj);
         Console.WriteLine();
         Console.WriteLine("-----------------------------");
     }

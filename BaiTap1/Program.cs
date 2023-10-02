@@ -8,6 +8,7 @@ class Program
         dssv.Nhap();
         Console.WriteLine("Danh sach sinh vien:");
         dssv.Xuat();
+        
     }
     static void Main(string[] args)
     {
