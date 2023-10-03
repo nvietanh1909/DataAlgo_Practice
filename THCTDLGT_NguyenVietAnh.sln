@@ -5,9 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap1", "BaiTap1\BaiTap1.csproj", "{BA5A572E-DCD1-4F28-962F-AA1F9B7CC14F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap2", "BaiTap2\BaiTap2.csproj", "{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap2,BaiTap3", "BaiTap2\BaiTap2,BaiTap3.csproj", "{1A955FCE-4ABB-4558-9D9C-48A42932DCA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSLKDon", "DSLKDon\DSLKDon.csproj", "{3096C6F3-E91E-48EF-ABFE-668D08EBD840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap4.DSLKDon", "DSLKDon\BaiTap4.DSLKDon.csproj", "{3096C6F3-E91E-48EF-ABFE-668D08EBD840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

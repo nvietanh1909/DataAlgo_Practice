@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Máy tính\\Viet Anh\\THCTDLGT_NguyenVietAnh\\DSLKDon\\DSLKDon.csproj",
-      "projectName": "DSLKDon",
-      "projectPath": "C:\\Users\\Admin\\OneDrive\\Máy tính\\Viet Anh\\THCTDLGT_NguyenVietAnh\\DSLKDon\\DSLKDon.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Máy tính\\Viet Anh\\THCTDLGT_NguyenVietAnh\\DSLKDon\\BaiTap4.DSLKDon.csproj",
+      "projectName": "BaiTap4.DSLKDon",
+      "projectPath": "C:\\Users\\Admin\\OneDrive\\Máy tính\\Viet Anh\\THCTDLGT_NguyenVietAnh\\DSLKDon\\BaiTap4.DSLKDon.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\OneDrive\\Máy tính\\Viet Anh\\THCTDLGT_NguyenVietAnh\\DSLKDon\\obj\\",
       "projectStyle": "PackageReference",

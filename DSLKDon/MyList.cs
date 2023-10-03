@@ -38,10 +38,11 @@ namespace DSLKDon
         }
         public void Input()
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             int x;
             do
             {
-                Console.Write("Gia tri: ");
+                Console.Write("Nhập giá trị cho Linked List: ");
                 int.TryParse(Console.ReadLine(), out x);
                 if (x == 0 || x == null)
                     return;
@@ -51,6 +52,7 @@ namespace DSLKDon
         }
         public void ShowList()
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             IntNode p = first;
             while (p != null)
             {
@@ -61,13 +63,13 @@ namespace DSLKDon
         }
         public IntNode SearchX(IntNode x)
         {
-            IntNode node = first;
-            while (node != null)
+            IntNode firstNode = first;
+            while (firstNode != null)
             {
-                if (node == x) return node;
-                else node = node.Next;
+                if (firstNode == x) return firstNode;
+                firstNode = firstNode.Next;
             }
-            return node;
+            return firstNode;
         }
         public IntNode GetMax()
         {
@@ -120,6 +122,23 @@ namespace DSLKDon
                 nodeFirst = nodeFirst.Next;
             }
             return oddList;
+        }
+        public MyList JoinList(MyList list2)
+        {
+            IntNode firstList1 = first;
+            IntNode firstList2 = list2.first;
+            MyList list3 = new MyList();
+            while (firstList1 != null)
+            {
+                list3.AddLast(firstList1);
+                firstList1 = firstList1.Next;
+            }
+            while(firstList2 != null)
+            {
+                list3.AddLast(firstList2);
+                firstList2 = firstList2.Next;
+            }
+            return list3;
         }
     }
 }

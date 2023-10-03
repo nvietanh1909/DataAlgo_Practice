@@ -9,9 +9,8 @@ namespace DSLKDon
     internal class IntNode
     {
         //Field
-        int data;
-        IntNode next;
-
+        private int data;
+        private IntNode next;
         //Properties
         public int Data { get => data; set => data = value; }
         public IntNode Next { get => next; set => next = value; }
