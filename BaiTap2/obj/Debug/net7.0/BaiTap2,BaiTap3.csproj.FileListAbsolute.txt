@@ -1,0 +1,4 @@
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap2\obj\Debug\net7.0\BaiTap2,BaiTap3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap2\obj\Debug\net7.0\BaiTap2,BaiTap3.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap2\obj\Debug\net7.0\BaiTap2,BaiTap3.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\BaiTap2\obj\Debug\net7.0\BaiTap2,BaiTap3.csproj.CoreCompileInputs.cache

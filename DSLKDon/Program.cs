@@ -24,8 +24,15 @@
             MyList oddList = list.GetOddList();
             oddList.ShowList();
             Console.WriteLine("------------------");
-
-
+            Console.Write("Nhập x cần tìm: ");
+            try
+            {
+                int.TryParse(Console.ReadLine(), out int x);
+                Console.WriteLine(list.SearchX(x).Data);
+            } catch (Exception e)
+            {
+                Console.WriteLine($"Lỗi: {e.Message}");
+            }
             Console.WriteLine("List 2:");
             MyList list2 = new MyList();
             list2.Input();

@@ -9,8 +9,8 @@ namespace DSLKDon
     internal class MyList
     {
         //Field
-        private IntNode first;
-        private IntNode last;
+        IntNode first;
+        IntNode last;
         //Properties
         public IntNode First { get => first; set => first = value; }
         public IntNode Last { get => last; set => last = value; }
@@ -53,22 +53,24 @@ namespace DSLKDon
         public void ShowList()
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            IntNode p = first;
-            while (p != null)
+            IntNode nodeFirst = first;
+            while (nodeFirst != null)
             {
-                Console.Write("{0} -> ", p.Data);
-                p = p.Next;
+                Console.Write("{0} -> ", nodeFirst.Data);
+                nodeFirst = nodeFirst.Next;
             }
             Console.WriteLine("null");
         }
-        public IntNode SearchX(IntNode x)
+        public IntNode SearchX(int x)
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             IntNode firstNode = first;
             while (firstNode != null)
             {
-                if (firstNode == x) return firstNode;
+                if (firstNode.Data == x) return firstNode;
                 firstNode = firstNode.Next;
             }
+            if (firstNode == null) throw new Exception("Không tồn tại x trong Linked List");
             return firstNode;
         }
         public IntNode GetMax()
