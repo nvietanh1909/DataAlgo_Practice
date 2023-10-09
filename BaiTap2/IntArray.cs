@@ -156,7 +156,6 @@ namespace BaiTap2
                     continue;
                 else
                     HoanVi(ref arr[i], ref arr[min]);
-
             }
         }
         public void InsertionSort()

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DSLKDon;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -142,5 +144,145 @@ namespace DSLKDon
             }
             return list3;
         }
+        public void RemoveAt(int i)
+        {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            IntNode node = first;
+            var tmp = 0;
+            while (tmp != i) 
+            { 
+                tmp++; 
+                node = node.Next; 
+                throw new Exception("Vị trí i không hợp lệ!"); 
+            }
+            RemoveX(node);
+        }
+        public void RemoveX(IntNode x)
+        {
+            if (first == last) first = last = null;
+            else if (x == last)
+            {
+                IntNode prep = FindPrep(x);
+                prep.Next = null;
+                last = prep;
+            }
+            else
+            {
+                IntNode next1 = x.Next;
+                IntNode next2 = next1.Next;
+                x.Data = next1.Data;
+                x.Next = next2;
+            }
+        }
+        public IntNode FindPrep(IntNode p)
+        {
+            IntNode node = first;
+            while(true)
+            {
+                if (node.Next == p)
+                    return node;
+                node = node.Next;
+            }
+        }
+        public void InsertAt(int x, int i)
+        {
+            IntNode node = first;
+            IntNode newNode = new IntNode(x);
+            var tmp = 0;
+            if(tmp == i)
+            {
+                AddFirst(newNode);
+            }
+            while (tmp != i)
+            {
+                tmp++;
+                node = node.Next;
+            }
+            IntNode prep = FindPrep(node);
+            prep.Next = newNode;
+            newNode.Next = node;
+        }
+        public void InsertXAfterMin(IntNode x, IntNode min)
+        {
+            if (first == last) AddLast(x);
+            else
+            {
+                x.Next = min.Next;
+                min.Next = x;
+            }
+        }
+        public void InsertXAfterY(IntNode x, IntNode y)
+        {
+            if (y == last) AddLast(x);
+            else
+            {
+                x.Next = y.Next;
+                y.Next = x;
+            }
+        }
+        public void InsertXBeforeMax(IntNode x, IntNode max)
+        {
+            if (max == first) AddFirst(x);
+            else
+            {
+                IntNode prep = FindPrep(max);
+                prep.Next = x;
+                x.Next = max;
+            }
+        }
+        public void InsertXBeforeY(IntNode x, IntNode y)
+        {
+            if (y == first) AddFirst(x);
+            else
+            {
+                IntNode prep = FindPrep(y);
+                prep.Next = x;
+                x.Next = y;
+            }
+        }
+        public MyList RShiftRight()
+        {
+            MyList newList = new MyList();
+            IntNode prep = FindPrep(last);
+            IntNode lastNode = last;
+            prep.Next = null;
+            last.Next = first;
+            first = lastNode;
+            IntNode firstNode = first;
+            while (firstNode != null)
+            {
+                newList.AddLast(firstNode);
+                firstNode = firstNode.Next;
+            }
+            return newList;
+        }
+        public void InterchangeSort()
+        {      
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            if (first == null && last == null) throw new Exception("Mảng rỗng!");
+            IntNode firstNode = first;
+            for(var i = firstNode; i != null; i = i.Next)
+                for (var j = i.Next; j != null; j = j.Next) 
+                    if (i.Data > j.Data) Swap(i, j);
+        }
+        public void SelectionSort()
+        {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            if (first == null && last == null) throw new Exception("Mảng rỗng!");
+            IntNode firstNode = first;
+            for (var i = firstNode; i != null; i = i.Next)
+            {
+                var min = i;
+                for (var j = i.Next; j != null; j = j.Next) if (i.Data > j.Data) min = j;
+                Swap(i, min);
+            }
+        }
+        public void Swap(IntNode a, IntNode b)
+        {
+            var tmp = a.Data;
+            a.Data = b.Data;
+            b.Data = tmp;
+        }
     }
 }
+
