@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BaiTap4.DSLKDon/1.0.0": {
+        "runtime": {
+          "BaiTap4.DSLKDon.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BaiTap4.DSLKDon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

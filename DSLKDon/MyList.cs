@@ -17,9 +17,19 @@ namespace DSLKDon
         //Field
         IntNode first;
         IntNode last;
+        int count = 0;
         //Properties
         public IntNode First { get => first; set => first = value; }
         public IntNode Last { get => last; set => last = value; }
+        public int Count
+        {
+            get
+            {
+                var tmp = 0;
+                for(var i = first; i != null; i = i.Next) tmp++;
+                return count = tmp;
+            }
+        }
         //Constructor
         public MyList() => first = last = null;
         //Method
@@ -156,8 +166,8 @@ namespace DSLKDon
             while (tmp != i) 
             { 
                 tmp++; 
-                node = node.Next; 
-                throw new Exception("Vị trí i không hợp lệ!"); 
+                node = node.Next;
+                if(i < 0 || node == null) throw new Exception("Vị trí i không hợp lệ!");
             }
             RemoveX(node);
         }
@@ -257,11 +267,12 @@ namespace DSLKDon
         }
         public MyList RShiftRight()
         {
+            if (first == last == null) return this;
             MyList newList = new MyList();
             IntNode prep = FindPrep(last);
             IntNode lastNode = last;
             prep.Next = null;
-            last.Next = first;
+            lastNode.Next = first;
             first = lastNode;
             IntNode firstNode = first;
             while (firstNode != null)
@@ -288,7 +299,7 @@ namespace DSLKDon
             for (var i = firstNode; i != null; i = i.Next)
             {
                 var min = i;
-                for (var j = i.Next; j != null; j = j.Next) if (i.Data > j.Data) min = j;
+                for (var j = i.Next; j != null; j = j.Next) if (min.Data > j.Data) min = j;
                 Swap(i, min);
             }
         }
