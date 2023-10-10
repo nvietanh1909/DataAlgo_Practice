@@ -1,10 +1,14 @@
 ﻿using DSLKDon;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Xml.Linq;
 
 namespace DSLKDon
 {
@@ -49,7 +53,8 @@ namespace DSLKDon
                 if (x == 0 || x == null)
                     return;
                 IntNode newNode = new IntNode(x);
-                AddLast(newNode);
+                if (SearchX(x) == null) AddLast(newNode);
+                else Console.WriteLine($"{x} đã tồn tại trong Linked List, hãy nhập lại x!");
             } while (true);
         }
         public void ShowList()
@@ -65,14 +70,13 @@ namespace DSLKDon
         }
         public IntNode SearchX(int x)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
             IntNode firstNode = first;
             while (firstNode != null)
             {
                 if (firstNode.Data == x) return firstNode;
                 firstNode = firstNode.Next;
             }
-            if (firstNode == null) throw new Exception("Không tồn tại x trong Linked List");
+            if (firstNode == null) return null;
             return firstNode;
         }
         public IntNode GetMax()
@@ -177,6 +181,7 @@ namespace DSLKDon
         public IntNode FindPrep(IntNode p)
         {
             IntNode node = first;
+            if (p == first) throw new Exception($"{p.Data} là phần tử đầu tiên của Linked List!");
             while(true)
             {
                 if (node.Next == p)
@@ -240,6 +245,16 @@ namespace DSLKDon
                 x.Next = y;
             }
         }
+        public MyList ShiftLeft()
+        {
+            MyList newList = new MyList();
+            IntNode prep = FindPrep(first.Next);
+            first = first.Next;
+            IntNode firstNode = first;
+            RemoveX(prep);
+            while (firstNode != null) { newList.AddLast(firstNode); firstNode = firstNode.Next; }
+            return newList;
+        }
         public MyList RShiftRight()
         {
             MyList newList = new MyList();
@@ -276,6 +291,37 @@ namespace DSLKDon
                 for (var j = i.Next; j != null; j = j.Next) if (i.Data > j.Data) min = j;
                 Swap(i, min);
             }
+        }
+        public MyList MergeList(MyList list1, MyList list2)
+        {
+            MyList list3 = new MyList();
+            IntNode firstList1 = list1.first;
+            IntNode firstList2 = list2.first;
+            while(firstList1 != null && firstList2 != null)
+            {
+                if (firstList1.Data < firstList2.Data)
+                {
+                    list3.AddLast(firstList1);
+                    firstList1 = firstList1.Next;
+                }
+                else
+                {
+                    list3.AddLast(firstList2);
+                    firstList2 = firstList2.Next;
+                }
+            }
+            while (firstList1 != null)
+            {
+                list3.AddLast(firstList1);
+                firstList1 = firstList1.Next;
+            }
+
+            while (firstList2 != null)
+            {
+                list3.AddLast(firstList2);
+                firstList2 = firstList2.Next;
+            }
+            return list3;
         }
         public void Swap(IntNode a, IntNode b)
         {
