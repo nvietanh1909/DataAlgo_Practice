@@ -27,10 +27,10 @@ namespace DSLKDon
                 //Console.WriteLine("Xóa phần tử thứ 3 của list 1");
                 //list.RemoveAt(3);
                 //list.ShowList();
-                //IntNode x = list.SearchX(2);
-                //Console.WriteLine("Xóa node có giá trị x(2) trong list 1");
-                //list.RemoveX(x);
-                //list.ShowList();
+                IntNode x = list.SearchX(2);
+                Console.WriteLine("Xóa node có giá trị x(2) trong list 1");
+                list.RemoveX(x);
+                list.ShowList();
                 //Console.WriteLine("Chèn x vào vị trí thứ 2");
                 //list.InsertAt(999, 2);
                 //list.ShowList();
@@ -68,6 +68,7 @@ namespace DSLKDon
                 //list3.MergeList(list, list2);
                 //Console.WriteLine("Tạo danh sách list3 từ list1 và list2 đã sắp xếp sao cho list3 k cần sắp xếp lại");
                 //list3.ShowList();
+                System.Environment.Exit(0);
             }
             catch (Exception e)
             {

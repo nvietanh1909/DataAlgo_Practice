@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap2,BaiTap3", "BaiTap2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTap4.DSLKDon", "DSLKDon\BaiTap4.DSLKDon.csproj", "{3096C6F3-E91E-48EF-ABFE-668D08EBD840}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntStack", "IntStack\IntStack.csproj", "{B975D239-266F-4E70-9633-7DE577F1B7C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3096C6F3-E91E-48EF-ABFE-668D08EBD840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3096C6F3-E91E-48EF-ABFE-668D08EBD840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3096C6F3-E91E-48EF-ABFE-668D08EBD840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B975D239-266F-4E70-9633-7DE577F1B7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B975D239-266F-4E70-9633-7DE577F1B7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B975D239-266F-4E70-9633-7DE577F1B7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B975D239-266F-4E70-9633-7DE577F1B7C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
