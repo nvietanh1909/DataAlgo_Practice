@@ -9,7 +9,6 @@ namespace IntQueue
     internal class ListQueue
     {
         //Field
-        int index;
         NodeQueue front;
         NodeQueue rear;
         //Properties

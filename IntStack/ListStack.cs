@@ -29,7 +29,7 @@ namespace IntStack
         public bool Pop(out int outItem)
         {
             Node topNode = top;
-            outItem = -1;
+            outItem = 0;
             if (IsEmpty) { outItem = 0; return false; }
             else
             {
@@ -37,9 +37,8 @@ namespace IntStack
                 outItem = deleteNode.Data;
                 top = top.Next;
                 deleteNode = null;
-                return true;
             }
-            
+            return true;
         }
         public bool GetTop(out int outItem)
         {
