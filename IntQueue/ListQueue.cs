@@ -38,6 +38,10 @@ namespace IntQueue
             outItem = front.Data;
             if(front == rear)
             {
+                front = rear = null;
+            }
+            else
+            {
                 NodeQueue x = front;
                 front = front.Next;
                 x = null;
