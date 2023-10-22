@@ -11,11 +11,9 @@ namespace DSLKDon
         //Field
         int data;
         IntNode next;
-        IntNode head;
         //Properties
         public int Data { get => data; set => data = value; }
         public IntNode Next { get => next; set => next = value; }
-        public IntNode Head { get => head; set => head = value; }
         //Constuctor
         public IntNode(int x = 0)
         {

@@ -13,7 +13,6 @@ namespace IntStack
         int stkMax;
         int stkTop;
         //Properties
-        public int[] StkArray { get => stkArray; set => stkArray = value; }
         public int StkMax { get => stkMax; set => stkMax = value; }
         public int StkTop { get => stkTop; set => stkTop = value; }
         //Constructor

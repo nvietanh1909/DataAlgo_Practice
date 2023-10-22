@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\bin\Debug\net7.0\IntQueue.exe
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\bin\Debug\net7.0\IntQueue.deps.json
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\bin\Debug\net7.0\IntQueue.runtimeconfig.json
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\bin\Debug\net7.0\IntQueue.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\bin\Debug\net7.0\IntQueue.pdb
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\refint\IntQueue.dll
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.pdb
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\IntQueue.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Máy tính\Viet Anh\THCTDLGT_NguyenVietAnh\IntQueue\obj\Debug\net7.0\ref\IntQueue.dll
