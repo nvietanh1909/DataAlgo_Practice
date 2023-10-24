@@ -29,7 +29,7 @@ namespace IntQueue
         public bool EnQueue(int x)
         {
             if (IsFull()) return false;
-            if (IsEmpty()) front = rear = 0;
+            else if (IsEmpty()) front = rear = 0;
             else rear = (rear + 1) % max;
             array[rear] = x;
             return true;
@@ -39,18 +39,22 @@ namespace IntQueue
             outItem = 0;
             if (IsEmpty()) return false;
             outItem = array[front];
-            if (front == rear)
-            {
-                front = rear = -1;
-            }
+            if (front == rear) front = rear = -1;
             else front = (front + 1) % max;
             return true;
         }
-        public bool Top(out int topItem)
+        public bool GetFront(out int frontItem)
         {
-            topItem = 0;
+            frontItem = 0;
             if (IsEmpty()) return false;
-            topItem = array[front];
+            frontItem = array[front];
+            return true;
+        }
+        public bool GetRear(out int rearItem)
+        {
+            rearItem = 0;
+            if (IsEmpty()) return false;
+            rearItem = array[rear];
             return true;
         }
     }

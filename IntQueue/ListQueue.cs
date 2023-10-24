@@ -47,12 +47,20 @@ namespace IntQueue
             }
             return true;
         }
-        public bool Top(out int topItem)
+        public bool GetFront(out int frontItem)
         {
-            topItem = 0;
+            frontItem = 0;
             if (IsEmpty()) return false;
-            else topItem = front.Data;
+            else frontItem = front.Data;
             return true;
+        }
+        public bool GetRear(out int rearItem)
+        {
+            rearItem = 0;
+            if (IsEmpty()) return false;
+            else rearItem = rear.Data;
+            return true;
+
         }
     }
 }
