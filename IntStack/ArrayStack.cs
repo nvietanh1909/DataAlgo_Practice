@@ -52,6 +52,5 @@ namespace IntStack
             topItem = stkArray[stkTop];
             return true;
         }
-
     }
 }
