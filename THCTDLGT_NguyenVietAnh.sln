@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntStack", "IntStack\IntSta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntQueue", "IntQueue\IntQueue.csproj", "{93EADC16-D4F5-45A0-B926-3C545A4E0B3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntBST", "IntBST\IntBST.csproj", "{A6667F55-D50D-42BA-80AC-1328177E1574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntBST", "IntBST\IntBST.csproj", "{A6667F55-D50D-42BA-80AC-1328177E1574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntAVL", "IntAVL\IntAVL.csproj", "{4CE17E6B-0998-47EA-BAB6-041CB4B7E675}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A6667F55-D50D-42BA-80AC-1328177E1574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6667F55-D50D-42BA-80AC-1328177E1574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6667F55-D50D-42BA-80AC-1328177E1574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE17E6B-0998-47EA-BAB6-041CB4B7E675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE17E6B-0998-47EA-BAB6-041CB4B7E675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE17E6B-0998-47EA-BAB6-041CB4B7E675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE17E6B-0998-47EA-BAB6-041CB4B7E675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
